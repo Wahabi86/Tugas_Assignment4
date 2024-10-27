@@ -38,14 +38,6 @@ btnSubmit.addEventListener("click", (event) => {
   localStorage.setItem("data", JSON.stringify(objectValue));
 
   renderData();
-
-  document.getElementById("form-nama").value = "";
-  document.getElementById("form-role").value = "";
-  document.getElementById("form-availbility").value = "";
-  document.getElementById("form-usia").value = "";
-  document.getElementById("form-lokasi").value = "";
-  document.getElementById("form-pengalaman").value = "";
-  document.getElementById("form-email").value = "";
 });
 
 function renderData() {
@@ -70,3 +62,20 @@ function renderData() {
 }
 
 renderData();
+
+window.onload = loadData;
+
+function loadData() {
+  const savedData = localStorage.getItem("data");
+  if (savedData) {
+    const parseData = JSON.parse(savedData);
+
+    document.getElementById("form-nama").value = parseData.nama;
+    document.getElementById("form-role").value = parseData.role;
+    document.getElementById("form-availbility").value = parseData.availbility;
+    document.getElementById("form-usia").value = parseData.usia;
+    document.getElementById("form-lokasi").value = parseData.lokasi;
+    document.getElementById("form-pengalaman").value = parseData.pengalaman;
+    document.getElementById("form-email").value = parseData.email;
+  }
+}
