@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid black; */
-  /* font-family   membuat font untuk semua karakter agar seragam */
 }
+
 span {
   color: grey;
 }

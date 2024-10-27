@@ -29,7 +29,7 @@ btnSubmit.addEventListener("click", (event) => {
     nama: inputNama.value,
     role: inputRole.value,
     availbility: inputAvailbility.value,
-    usia: inputUsia.value,
+    usia: inputUsia.value + " Tahun",
     lokasi: inputLokasi.value,
     pengalaman: inputPengalaman.value,
     email: inputEmail.value,
