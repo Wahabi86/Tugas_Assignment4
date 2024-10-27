@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Training</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Litzz</h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">INVENTORY</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION PROFIL -->
+      <div id="container" class="container">
+        <div class="card">
+          <div class="content-left">
+            <!-- 1. foto -->
+            <div class="logoProfil">
+              <img src="profilImg.jpeg" alt="Eror" />
+            </div>
+            <!-- 2. profil -->
+            <div class="profil">
+              <div class="style-profil">
+                <h1 id="nama">Nama Anda</h1>
+                <p><span id="role">Front End Designer</span></p>
+              </div>
+              <div class="style-button">
+                <button id="btn-edit" class="btn-1">Edit</button>
+                <button class="btn-2">Resume</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-right">
+            <!-- 3.deskripsi profil -->
+            <div class="deskripsi-left">
+              <p>Availbility</p>
+              <p>Usia</p>
+              <p>Lokasi</p>
+              <p>Pengalaman</p>
+              <p>Email</p>
+            </div>
+            <div class="deskripsi-right">
+              <span id="availbility">Full Time</span>
+              <span id="usia">19</span>
+              <span id="lokasi">Jakarta</span>
+              <span id="pengalaman">2</span>
+              <span id="email">email@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION FORM -->
+      <div class="container2">
+        <div class="card2">
+          <form id="form">
+            <!-- Form Nama -->
+            <div class="input-section">
+              <label for="fnama">Nama</label>
+              <input type="text" placeholder="" id="form-nama" />
+            </div>
+            <!-- Form Role -->
+            <div class="input-section">
+              <label for="frole">Role</label>
+              <input type="text" placeholder="" id="form-role" />
+            </div>
+            <!-- Form Avability -->
+            <div class="input-section">
+              <label for="favailbility">Availbility</label>
+              <input type="text" placeholder="" id="form-availbility" />
+            </div>
+            <!-- Form Usia -->
+            <div class="input-section">
+              <label for="fusia">Usia</label>
+              <input type="text" placeholder="" id="form-usia" />
+            </div>
+            <!-- Form Lokasi -->
+            <div class="input-section">
+              <label for="flokasi">Lokasi</label>
+              <input type="text" placeholder="" id="form-lokasi" />
+            </div>
+            <!-- Form Years Experience -->
+            <div class="input-section">
+              <label for="fpengalaman">Pengalaman</label>
+              <input type="text" placeholder="" id="form-pengalaman" />
+            </div>
+            <!-- Form Email -->
+            <div class="input-section">
+              <label for="femail">Email</label>
+              <input type="text" placeholder="" id="form-email" />
+            </div>
+            <!-- Button Submit -->
+            <div class="btn-form">
+              <input type="submit" id="btn-submit" class="btn-submit" value="SUBMIT" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

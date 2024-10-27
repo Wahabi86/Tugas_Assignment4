@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+  /* font-family   membuat font untuk semua karakter agar seragam */
+}
+span {
+  color: grey;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 60px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  padding-top: 15px;
+}
+
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 13px;
+  margin: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #e0f0f3;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin: 0px 150px;
+  padding: 0px 95px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  padding: 25px 0px;
+  gap: 30px;
+}
+
+.logoProfil img {
+  height: 200px;
+  width: 200px;
+}
+
+.style-profil {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+
+.style-button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.style-button .btn-1 {
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px blue;
+}
+
+.style-button .btn-2 {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1.5px solid green;
+  color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0px 150px;
+}
+
+.deskripsi-left {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(228, 222, 222);
+  gap: 10px;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.deskripsi-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: grey;
+}
+
+.container2 {
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 73rem;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px 40px;
+}
+
+.input-section input {
+  display: flex;
+  flex-direction: column;
+  width: 80em;
+  border: 0.7px solid black;
+  padding: 5px;
+  border-radius: 3.5px;
+  margin: 5px;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: green;
+  border: 2px solid green;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 0px 6px green;
+  margin: 0px;
+  border-radius: 2px;
+  padding: 5px;
+}
