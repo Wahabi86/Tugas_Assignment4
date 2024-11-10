@@ -29,7 +29,7 @@ btnSubmit.addEventListener("click", (event) => {
     nama: inputNama.value,
     role: inputRole.value,
     availbility: inputAvailbility.value,
-    usia: inputUsia.value + " Tahun",
+    usia: inputUsia.value,
     lokasi: inputLokasi.value,
     pengalaman: inputPengalaman.value,
     email: inputEmail.value,
@@ -40,6 +40,7 @@ btnSubmit.addEventListener("click", (event) => {
   renderData();
 });
 
+// menampilkan data di localstorage ke section profil
 function renderData() {
   const data = localStorage.getItem("data");
   const parseData = JSON.parse(data);
@@ -63,6 +64,7 @@ function renderData() {
 
 renderData();
 
+// save data saat direfresh
 window.onload = loadData;
 
 function loadData() {
